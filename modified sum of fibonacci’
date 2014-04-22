@@ -1,0 +1,50 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+package fibonaci;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author Asisten
+ */
+public class Fibonaci {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        
+        int x = 4;
+//        Scanner s = new Scanner(System.in);
+        int i,j;
+        int jumlah;
+        int totalsemua=0;
+        int total;
+        System.out.print("masukkan jumlah deret : ");
+//        s.nextInt();
+        System.out.println(x);
+        i = 1;
+        j = 1;
+//        System.out.println(i);
+//        System.out.println(j);
+        int jumlah1 =i + j;
+        for (int a=1;a<x-1;a++){
+            jumlah = i+j;
+//            System.out.println(jumlah);
+            i=j;
+            j=jumlah;
+            totalsemua+=jumlah;
+            
+            
+            
+        }
+   
+        System.out.println(jumlah1+totalsemua);
+    }
+    
+}
