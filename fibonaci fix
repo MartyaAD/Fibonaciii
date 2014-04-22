@@ -1,0 +1,39 @@
+package fibonaci;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author Asisten
+ */
+public class Fibonaci {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        
+        int x = 7;
+//        Scanner s = new Scanner(System.in);
+        int i,j;
+        int jumlah;
+        System.out.print("masukkan jumlah deret : ");
+//        s.nextInt();
+        System.out.println(x);
+        i = 1;
+        j = 1;
+        System.out.println(i);
+        System.out.println(j);
+        jumlah =i + j;
+        System.out.println(jumlah);
+        for (int a=1;a<x-1;a++){
+            jumlah = i+j;
+            System.out.println(jumlah);
+            i=j;
+            j=jumlah;
+            
+        }
+        
+    }
+    
+}
